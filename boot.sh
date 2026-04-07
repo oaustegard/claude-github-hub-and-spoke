@@ -32,7 +32,7 @@ fi
 
 # ── Authenticate ──
 if [ -n "$GH_TOKEN" ]; then
-    echo "$GH_TOKEN" | gh auth login --with-token 2>/dev/null
+    echo "$GH_TOKEN" | gh auth login --with-token 2>/dev/null || true
     GH_USER=$(gh api user -q .login 2>/dev/null || echo "unknown")
     echo "✓ Authenticated as $GH_USER"
 else
