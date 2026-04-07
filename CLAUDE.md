@@ -1,4 +1,4 @@
-# Claude GitHub Hub and Spoke
+# Claude GitHub GitHub and Spoke
 
 This repo is the **hub** — it configures your Claude Code on the Web session
 with authenticated GitHub access via the `gh` CLI.
