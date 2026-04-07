@@ -44,13 +44,6 @@ it in `settings.json` and using `gh` CLI instead, you get uniform access to
 
 ## Customizing
 
-- **Add system packages**: Edit `Containerfile` with additional `RUN` lines
 - **Add more credentials**: Add `.env` files — `boot.sh` sources all `*.env`
 - **Add session-end hooks**: Extend `settings.json` with `Stop`/`SessionEnd` hooks
-
-## Container layer caching (optional)
-
-The `Containerfile` uses the container-layer format. If you set up caching
-(see [claude-container-layers](https://github.com/oaustegard/claude-container-layers)),
-`gh` gets restored from cache instead of re-downloaded each session.
-Without caching, `boot.sh` installs `gh` from GitHub Releases directly (~3s).
+- **Add system packages**: Add `apt-get install` or `pip install` lines to `boot.sh`
