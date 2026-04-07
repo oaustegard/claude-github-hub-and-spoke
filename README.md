@@ -1,4 +1,4 @@
-# Claude GitHub Hub and Spoke
+# Claude GitHub GitHub and Spoke
 
 **Give Claude Code on the Web authenticated `gh` CLI access to all your repos.**
 
